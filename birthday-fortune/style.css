@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 48px 16px;
+  background: #f5f1ec;
+  color: #342c48;
+  font-family: "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #d7cfd8;
+  border-radius: 14px;
+  background: #fffcf8;
+}
+
+header {
+  padding: 26px 18px;
+  text-align: center;
+  background: #38304e;
+  color: #fffaf3;
+}
+
+.stars { color: #f4dba0; font-size: 1.6rem; }
+h1 { margin: 8px 0; font-family: "Yu Mincho", serif; font-size: clamp(1.45rem, 5vw, 2rem); }
+header p { margin: 0; font-size: .9rem; }
+form { margin: 26px 24px; }
+fieldset { margin: 0; padding: 0; border: 0; }
+legend { padding: 0; font-weight: bold; }
+.birthday { display: flex; flex-wrap: wrap; gap: 18px; margin: 12px 0 20px; }
+
+select {
+  padding: 8px;
+  min-width: 80px;
+  background: white;
+  color: #342c48;
+  border: 1px solid #91849b;
+  border-radius: 5px;
+  font: inherit;
+}
+
+button {
+  width: 100%;
+  padding: 11px;
+  border: 0;
+  border-radius: 6px;
+  background: #59426e;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover { background: #453057; }
+select:focus-visible, button:focus-visible { outline: 3px solid #926a29; outline-offset: 3px; }
+#result { margin: 0 24px 26px; padding: 18px; border-top: 2px solid #b8985b; background: #f7f0e4; }
+h2 { margin: 0 0 8px; font-size: .9rem; color: #6b5130; }
+#message { margin: 0; font-family: "Yu Mincho", serif; font-size: 1.15rem; }
