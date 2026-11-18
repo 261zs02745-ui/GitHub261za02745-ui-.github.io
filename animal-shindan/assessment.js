@@ -46,7 +46,7 @@ form.addEventListener('submit', function (event) {
 
   // 診断結果とハッシュタグを入れたXの投稿画面へのリンクを作る。
   const anchor = document.createElement('a');
-  const postText = result + '\n#好きな動物でいいところ診断';
+  const postText = result + '\n#動物診断';
   anchor.setAttribute('href', 'https://x.com/intent/tweet?text=' + encodeURIComponent(postText));
   anchor.setAttribute('target', '_blank');
   anchor.setAttribute('rel', 'noopener');
