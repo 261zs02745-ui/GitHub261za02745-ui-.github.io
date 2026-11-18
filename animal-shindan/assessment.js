@@ -6,10 +6,10 @@ const resultArea = document.getElementById('result-area');
 const tweetArea = document.getElementById('tweet-area');
 
 const answers = [
-  '聞き上手です。友だちが話すとき、最後までじっくり聞ける人です。',
-  '好奇心いっぱいです。初めて見るものにも、面白いところを見つけられます。',
-  '気配り上手です。ひとりでいる人にも自然に声をかけられます。',
-  'アイデアが豊かです。いつもの遊びに新しいルールを思いつく人です。',
+  '聞き上手です。友達の話を最後までじっくり聞けます。',
+  '好奇心が旺盛です。初めて見るものからも面白いことを見つけられます。',
+  '気配りが上手です。一人でいる人にも自然に声をかけられます。',
+  'アイデアが豊かです。いつもの遊びでも、新しい楽しみ方を思いつきます。',
   '根気があります。好きなことにじっくり取り組めます。',
   '周りを明るくする人です。楽しい発見をみんなと分け合えます。'
 ];
@@ -30,7 +30,7 @@ form.addEventListener('submit', function (event) {
   resultArea.textContent = '';
   tweetArea.textContent = '';
   if (animal === '') {
-    resultArea.textContent = '好きな動物を入れてください。';
+    resultArea.textContent = '好きな動物の名前を入力してください。';
     animalInput.focus();
     return;
   }
