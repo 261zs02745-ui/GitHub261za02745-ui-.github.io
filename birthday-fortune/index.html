@@ -1,35 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>誕生日のひとこと占い</title>
+  <title>好きな動物でいいところ診断</title>
   <link rel="stylesheet" href="style.css">
-  <script src="fortune.js" defer></script>
 </head>
 <body>
-  <main>
-    <header>
-      <div class="stars" aria-hidden="true">✧　☾　✧</div>
-      <h1>誕生日のひとこと占い</h1>
-      <p>あなたの誕生日に、前向きなひとことを贈ります。</p>
-    </header>
-    <form id="fortune-form">
-      <fieldset>
-        <legend>誕生日はいつですか？</legend>
-        <div class="birthday">
-          <label><select id="month" required><option value="">選択</option></select> 月</label>
-          <label><select id="day" required disabled><option value="">選択</option></select> 日</label>
-        </div>
-      </fieldset>
-      <button type="submit">占ってみる</button>
-    </form>
-    <div aria-live="polite" aria-atomic="true">
-      <section id="result" hidden>
-        <h2 id="result-title"></h2>
-        <p id="message"></p>
-      </section>
-    </div>
-  </main>
+  <h1>好きな動物でいいところ診断</h1>
+  <form id="assessment">
+    <p><label for="animal">好きな動物をひとつ入れてください。</label></p>
+    <input type="text" id="animal" size="22" maxlength="20" placeholder="例：ねこ">
+    <button type="submit">診断する</button>
+  </form>
+  <div id="result-area" aria-live="polite"></div>
+  <script src="assessment.js"></script>
 </body>
 </html>
