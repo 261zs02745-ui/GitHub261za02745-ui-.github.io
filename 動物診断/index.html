@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>動物診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>動物診断</h1>
+  <form id="assessment">
+    <p><label for="animal">好きな動物の名前を一つ入力してください。</label></p>
+    <input type="text" id="animal" size="40" maxlength="20">
+    <button type="submit">診断する</button>
+  </form>
+  <div id="result-area" aria-live="polite"></div>
+  <div id="tweet-area"></div>
+  <script src="assessment.js"></script>
+</body>
+</html>
