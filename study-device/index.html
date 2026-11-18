@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>勉強用端末えらび</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>勉強用端末えらび</h1>
+    <p class="intro">大学の勉強でいちばんしたいことを選ぶと、使いやすい端末とその理由がわかります。</p>
+    <section aria-labelledby="question">
+      <h2 id="question">何に使いたい？</h2>
+      <div class="choices">
+        <button type="button" id="notes" aria-pressed="true">手書きノート</button>
+        <button type="button" id="report" aria-pressed="false">レポート作成</button>
+        <button type="button" id="review" aria-pressed="false">通学中の復習</button>
+      </div>
+      <div class="result" aria-live="polite" aria-atomic="true">
+        <p class="label">おすすめの端末</p>
+        <h3 id="device">ペン対応タブレット</h3>
+        <p id="reason">授業のPDFにペンで直接書き込めます。図や矢印を使って、自分がわかりやすい形にまとめられます。</p>
+      </div>
+    </section>
+    <p class="back"><a href="../">← るりのポートフォリオへ</a></p>
+  </main>
+</body>
+</html>
