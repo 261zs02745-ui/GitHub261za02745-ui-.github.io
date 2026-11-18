@@ -3,6 +3,7 @@
 const animalInput = document.getElementById('animal');
 const form = document.getElementById('assessment');
 const resultArea = document.getElementById('result-area');
+const tweetArea = document.getElementById('tweet-area');
 
 const answers = [
   '聞き上手です。友だちが話すとき、最後までじっくり聞ける人です。',
@@ -27,6 +28,7 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
   const animal = animalInput.value.trim();
   resultArea.textContent = '';
+  tweetArea.textContent = '';
   if (animal === '') {
     resultArea.textContent = '好きな動物を入れてください。';
     animalInput.focus();
@@ -38,6 +40,16 @@ form.addEventListener('submit', function (event) {
   resultArea.appendChild(heading);
 
   const paragraph = document.createElement('p');
-  paragraph.textContent = assessment(animal);
+  const result = assessment(animal);
+  paragraph.textContent = result;
   resultArea.appendChild(paragraph);
+
+  // 診断結果とハッシュタグを入れたXの投稿画面へのリンクを作る。
+  const anchor = document.createElement('a');
+  const postText = result + '\n#好きな動物でいいところ診断';
+  anchor.setAttribute('href', 'https://x.com/intent/tweet?text=' + encodeURIComponent(postText));
+  anchor.setAttribute('target', '_blank');
+  anchor.setAttribute('rel', 'noopener');
+  anchor.textContent = 'Xでポストする';
+  tweetArea.appendChild(anchor);
 });

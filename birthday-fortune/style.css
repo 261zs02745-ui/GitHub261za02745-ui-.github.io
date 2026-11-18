@@ -1,6 +1,6 @@
 body {
-  background-color: #04a6eb;
-  color: #fdffff;
+  background-color: #f3cf52;
+  color: #382f18;
   width: 500px;
   max-width: calc(100% - 16px);
   margin-right: auto;
@@ -9,9 +9,17 @@ body {
 
 button {
   padding: 5px 20px;
-  background-color: #337ab7;
-  color: #fdffff;
+  background-color: #64501b;
+  color: white;
   border-style: none;
+}
+
+#tweet-area a {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #382f18;
+  color: white;
+  text-decoration: none;
 }
 
 input {
