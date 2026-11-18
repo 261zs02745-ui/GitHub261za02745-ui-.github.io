@@ -1,7 +1,7 @@
 'use strict';
 
 const animalInput = document.getElementById('animal');
-const form = document.getElementById('assessment');
+const form = document.getElementById('diagnosis-form');
 const resultArea = document.getElementById('result-area');
 const tweetArea = document.getElementById('tweet-area');
 
@@ -14,7 +14,7 @@ const answers = [
   '周りを明るくする人です。楽しい発見をみんなと分け合えます。'
 ];
 
-function assessment(animal) {
+function diagnoseAnimal(animal) {
   // 授業の診断と同じように、文字の番号を足して結果を選ぶ。
   let sum = 0;
   for (let i = 0; i < animal.length; i++) {
@@ -40,7 +40,7 @@ form.addEventListener('submit', function (event) {
   resultArea.appendChild(heading);
 
   const paragraph = document.createElement('p');
-  const result = assessment(animal);
+  const result = diagnoseAnimal(animal);
   paragraph.textContent = result;
   resultArea.appendChild(paragraph);
 
