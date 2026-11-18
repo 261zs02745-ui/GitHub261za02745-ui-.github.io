@@ -33,7 +33,7 @@ form.addEventListener('submit', function (event) {
     return;
   }
 
-  const heading = document.createElement('h2');
+  const heading = document.createElement('h3');
   heading.textContent = '診断結果';
   resultArea.appendChild(heading);
 

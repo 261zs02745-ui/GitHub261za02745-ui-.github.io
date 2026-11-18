@@ -1,19 +1,20 @@
 body {
-  background-color: #d9f2ff;
-  color: #243a48;
-  max-width: 500px;
-  margin: 24px auto;
-  padding: 0 12px;
+  background-color: #04a6eb;
+  color: #fdffff;
+  width: 500px;
+  max-width: calc(100% - 16px);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 button {
-  padding: 5px 16px;
-  background-color: #3373a5;
-  color: white;
-  border: none;
-  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #337ab7;
+  color: #fdffff;
+  border-style: none;
 }
 
 input {
-  height: 22px;
+  height: 20px;
+  max-width: calc(100% - 8px);
 }
