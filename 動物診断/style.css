@@ -1,28 +1,7 @@
-body {
-  background-color: #f3cf52;
-  color: #382f18;
-  width: 500px;
-  max-width: calc(100% - 16px);
-  margin-right: auto;
-  margin-left: auto;
+.diagnosis-main {
+  max-width: 40rem;
 }
 
-button {
-  padding: 5px 20px;
-  background-color: #64501b;
-  color: white;
-  border-style: none;
-}
-
-#tweet-area a {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #382f18;
-  color: white;
-  text-decoration: none;
-}
-
-input {
-  height: 20px;
-  max-width: calc(100% - 8px);
+#result-area {
+  overflow-wrap: anywhere;
 }

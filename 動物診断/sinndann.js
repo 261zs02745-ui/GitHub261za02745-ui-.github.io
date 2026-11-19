@@ -30,19 +30,33 @@ form.addEventListener('submit', function (event) {
   resultArea.textContent = '';
   tweetArea.textContent = '';
   if (animal === '') {
-    resultArea.textContent = '好きな動物の名前を入力してください。';
+    const message = document.createElement('p');
+    message.className = 'alert alert-warning mb-0';
+    message.textContent = '好きな動物の名前を入力してください。';
+    resultArea.appendChild(message);
     animalInput.focus();
     return;
   }
 
-  const heading = document.createElement('h3');
+  const result = diagnoseAnimal(animal);
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const heading = document.createElement('h2');
+  heading.className = 'card-header text-bg-primary h5';
   heading.textContent = '診断結果';
-  resultArea.appendChild(heading);
+
+  const body = document.createElement('div');
+  body.className = 'card-body';
 
   const paragraph = document.createElement('p');
-  const result = diagnoseAnimal(animal);
+  paragraph.className = 'card-text';
   paragraph.textContent = result;
-  resultArea.appendChild(paragraph);
+
+  body.appendChild(paragraph);
+  card.appendChild(heading);
+  card.appendChild(body);
+  resultArea.appendChild(card);
 
   // 診断結果とハッシュタグを入れたXの投稿画面へのリンクを作る。
   const anchor = document.createElement('a');
@@ -50,6 +64,7 @@ form.addEventListener('submit', function (event) {
   anchor.setAttribute('href', 'https://x.com/intent/tweet?text=' + encodeURIComponent(postText));
   anchor.setAttribute('target', '_blank');
   anchor.setAttribute('rel', 'noopener');
+  anchor.className = 'btn btn-dark';
   anchor.textContent = 'Xでポストする';
   tweetArea.appendChild(anchor);
 });
