@@ -9,8 +9,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-primary-subtle">
-  <header class="navbar bg-primary" data-bs-theme="dark">
+<body>
+  <header class="navbar site-header">
     <div class="container">
       <span class="navbar-brand mb-0">動物診断</span>
     </div>
@@ -20,9 +20,9 @@
     <h1 class="h2 mb-3">あなたのいいところは？</h1>
     <form id="diagnosis-form">
       <label class="form-label" for="animal">好きな動物の名前を一つ入力してください。</label>
-      <div class="input-group">
+      <div class="d-grid gap-2">
         <input class="form-control" type="text" id="animal" maxlength="20">
-        <button class="btn btn-primary" type="submit">診断する</button>
+        <button class="btn btn-diagnose" type="submit">診断する</button>
       </div>
     </form>
     <div id="result-area" class="mt-4" aria-live="polite"></div>

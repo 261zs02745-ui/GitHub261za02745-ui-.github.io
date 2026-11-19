@@ -43,7 +43,7 @@ form.addEventListener('submit', function (event) {
   card.className = 'card';
 
   const heading = document.createElement('h2');
-  heading.className = 'card-header text-bg-primary h5';
+  heading.className = 'card-header h5';
   heading.textContent = '診断結果';
 
   const body = document.createElement('div');

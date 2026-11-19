@@ -1,7 +1,55 @@
+:root {
+  --ginkgo-background: #fff5d4;
+  --ginkgo-leaf: #f5cb4d;
+  --ginkgo-soft: #fbe398;
+  --ginkgo-hover: #ebba39;
+  --ginkgo-active: #dfa92b;
+  --ginkgo-border: #aa7715;
+  --ginkgo-ink: #352707;
+}
+
+body {
+  background-color: var(--ginkgo-background);
+  color: var(--ginkgo-ink);
+}
+
+.site-header {
+  --bs-navbar-brand-color: var(--ginkgo-ink);
+  background-color: var(--ginkgo-leaf);
+}
+
 .diagnosis-main {
   max-width: 40rem;
 }
 
+.form-control {
+  border-color: var(--ginkgo-border);
+}
+
+.form-control:focus {
+  border-color: var(--ginkgo-border);
+  box-shadow: 0 0 0 0.25rem rgb(170 119 21 / 25%);
+}
+
+.btn-diagnose {
+  --bs-btn-color: var(--ginkgo-ink);
+  --bs-btn-bg: var(--ginkgo-leaf);
+  --bs-btn-border-color: var(--ginkgo-border);
+  --bs-btn-hover-color: var(--ginkgo-ink);
+  --bs-btn-hover-bg: var(--ginkgo-hover);
+  --bs-btn-hover-border-color: var(--ginkgo-border);
+  --bs-btn-active-color: var(--ginkgo-ink);
+  --bs-btn-active-bg: var(--ginkgo-active);
+  --bs-btn-active-border-color: var(--ginkgo-border);
+  --bs-btn-focus-shadow-rgb: 132, 89, 14;
+}
+
 #result-area {
   overflow-wrap: anywhere;
+}
+
+#result-area .card {
+  --bs-card-cap-bg: var(--ginkgo-soft);
+  --bs-card-cap-color: var(--ginkgo-ink);
+  --bs-card-border-color: var(--ginkgo-border);
 }
